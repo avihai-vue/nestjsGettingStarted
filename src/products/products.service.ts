@@ -21,5 +21,11 @@ export class ProductService{
         return this.id.toString();
     }
 
+    getProduct(prodId: number): productModel{
+        return this.products.find(product => product.id === prodId.toString());
+    }
 
+    getAllProducts(): productModel[]{
+        return this.products;
+    }
 }
