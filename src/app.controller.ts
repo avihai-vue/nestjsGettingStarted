@@ -11,7 +11,7 @@ export class AppController {
 
   @Get('tasks2')
   getHello2(): {name: string} {
-    return { name: this.appService1.getHello('task2')};
+    return { name: this.appService1.getHello('taska2')};
   }
 
   @Get()
